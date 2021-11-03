@@ -1,7 +1,7 @@
 function consultar() {
 
     $.ajax({
-        url: "http://144.22.225.110:8080/api/Category/all",
+        url: "http://129.151.115.61:8080/api/Category/all",
         type: "GET",
         dataType: "JSON",
 
@@ -45,7 +45,7 @@ function registrar() {
         dataType: 'JSON',
         data: JSON.stringify(var2),
 
-        url: "http://144.22.225.110:8080/api/Category/save",
+        url: "http://129.151.115.61:8080/api/Category/save",
 
 
         success: function(response) {
@@ -77,7 +77,7 @@ function editar() {
     let dataTosend = JSON.stringify(myData);
     $.ajax({
 
-        url: "http://144.22.225.110:8080/api/Category/update",
+        url: "http://129.151.115.61:8080/api/Category/update",
         type: "PUT",
         data: dataTosend,
         contentType: "application/JSON",
@@ -106,7 +106,7 @@ function eliminar(id) {
     }
     let dataToSend = JSON.stringify(myData)
     $.ajax({
-        url: "http://144.22.225.110:8080/api/Category/" + id.val(),
+        url: "http://129.151.115.61:8080/api/Category/" + id.val(),
         type: 'DELETE',
         //data: dataToSend,
         //contentType: "application/JSON",

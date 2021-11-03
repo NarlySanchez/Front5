@@ -1,6 +1,6 @@
 function consultarstatus() {
     $.ajax({
-        url: "http://144.22.225.110:8080/api/Reservation/report-status",
+        url: "http://129.151.115.61:8080/api/Reservation/report-status",
         type: "GET",
         dataType: "JSON",
         //success - propiedad
@@ -33,7 +33,7 @@ function consultardates(startDate, devolutionDate) {
     }
     let dataToSend = JSON.stringify(myData)
     $.ajax({
-        url: "http://144.22.225.110:8080/api/Reservation/report-dates/" + startDate.val() + "/" + devolutionDate.val(),
+        url: "http://129.151.115.61:8080/api/Reservation/report-dates/" + startDate.val() + "/" + devolutionDate.val(),
         //+ startDate.val()+"/"+devolutionDate.val(),
         type: "GET",
         dataType: "JSON",
@@ -67,7 +67,7 @@ function consultardates(startDate, devolutionDate) {
 
 function consultarclients() {
     $.ajax({
-        url: "http://144.22.225.110:8080/api/Reservation/report-clients",
+        url: "http://129.151.115.61:8080/api/Reservation/report-clients",
         type: "GET",
         dataType: "JSON",
         //success - propiedad

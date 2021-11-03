@@ -1,7 +1,7 @@
 function consultar() {
 
     $.ajax({
-        url: "http://144.22.225.110:8080/api/Room/all",
+        url: "http://129.151.115.61:8080/api/Room/all",
         type: "GET",
         dataType: "JSON",
 
@@ -86,7 +86,7 @@ function editar() {
     let dataTosend = JSON.stringify(myData);
     $.ajax({
 
-        url: "http://144.22.225.110:8080/api/Room/update",
+        url: "http://129.151.115.61:8080/api/Room/update",
         type: "PUT",
         data: dataTosend,
         contentType: "application/JSON",
@@ -117,7 +117,7 @@ function eliminar(id) {
     }
     let dataToSend = JSON.stringify(myData)
     $.ajax({
-        url: "http://144.22.225.110:8080/api/Room/" + id.val(),
+        url: "http://129.151.115.61:8080/api/Room/" + id.val(),
         type: 'DELETE',
         //data: dataToSend,
         //contentType: "application/JSON",
